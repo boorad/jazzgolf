@@ -13,9 +13,16 @@
         {
           "origin": "https://n"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "name": "jazzgolf",
-    "slug": "jazzgolf"
+    "slug": "jazzgolf",
+    "android": {
+      "package": "golf.spicy.jazzgolf"
+    },
+    "ios": {
+      "bundleIdentifier": "golf.spicy.jazzgolf"
+    }
   }
 }
