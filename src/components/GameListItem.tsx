@@ -32,7 +32,7 @@ function GameListItem({
       </Link>
       <View className="flex-1 flex-row justify-end items-center p-2">
         <TouchableOpacity onPress={() => deleteGame(game.id)}>
-          <Text>X</Text>
+          <Text className="text-dark dark:text-white">X</Text>
         </TouchableOpacity>
       </View>
     </View>
