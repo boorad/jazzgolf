@@ -1,5 +1,5 @@
 import { createJazzRNApp } from "jazz-react-native";
-import { PlayerAccount } from "@/providers/jazz/schema";
+import { PlayerAccount } from "@/schema/accounts";
 
 export const Jazz = createJazzRNApp({ AccountSchema: PlayerAccount });
 export const { useAccount, useCoState, useAcceptInvite } = Jazz;

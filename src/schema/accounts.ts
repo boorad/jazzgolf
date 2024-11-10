@@ -1,20 +1,5 @@
 import { Account, CoList, CoMap, Profile, co } from "jazz-tools";
-
-export class Game extends CoMap {
-  start = co.Date;
-  name = co.string;
-}
-
-export class Player extends CoMap {
-  name = co.string;
-  short = co.string;
-}
-
-export class Round extends CoMap {
-  start = co.Date;
-}
-
-export class ListOfGames extends CoList.Of(co.ref(Game)) {}
+import { ListOfGames } from "./games";
 
 export class PlayerAccountRoot extends CoMap {
   games = co.ref(ListOfGames);

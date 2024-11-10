@@ -13,7 +13,7 @@ export default function Layout() {
       <ThemeProvider>
         <Jazz.Provider
           auth={auth}
-          peer="wss://cloud.jazz.tools/?key=jazzgolf@gcmp.io"
+          peer="wss://cloud.jazz.tools/?key=jazzgolf@jazz.golf"
           storage={undefined}
         >
           <Stack>

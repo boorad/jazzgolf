@@ -1,6 +1,6 @@
 import { useAccount, useCoState } from "@/providers/jazz";
 import GameList from "@/components/GameList";
-import { Game, ListOfGames } from "@/providers/jazz/schema";
+import { Game, ListOfGames } from "@/schema/games";
 import { Group } from "jazz-tools";
 import { SafeAreaView, Text, TouchableOpacity, View } from "react-native";
 

@@ -1,6 +1,6 @@
 import { FlatList, Text, View } from "react-native";
 import GameListItem from "@/components/GameListItem";
-import { ListOfGames } from "@/providers/jazz/schema";
+import { ListOfGames } from "@/schema/games";
 
 function GameList({ games }: { games: ListOfGames }) {
   const deleteGame = (id: string) => {

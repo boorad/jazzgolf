@@ -1,19 +1,18 @@
-import { Text } from "react-native";
-import { useLocalSearchParams } from "expo-router";
-import GameProvider from "@/providers/game";
-import { getGameFromParams } from "@/utils/game";
+import { useContext } from "react";
+import { Text, View } from "react-native";
+import { GameContext } from "@/providers/game";
+import GameSettingsPlayers from "@/components/GameSettingsPlayers";
 
 function GameSettings() {
-  const game = getGameFromParams(useLocalSearchParams());
-  if (!game) return null;
+  const { game } = useContext(GameContext);
 
   return (
-    <GameProvider>
+    <View className="flex-1 bg-white dark:bg-neutral-900">
       <Text className="text-black dark:text-white">
         {game.start.toLocaleDateString()} - {game.start.toLocaleTimeString()}
-        settings
       </Text>
-    </GameProvider>
+      <GameSettingsPlayers />
+    </View>
   );
 }
 

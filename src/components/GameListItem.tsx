@@ -1,5 +1,5 @@
 import { Text, TouchableOpacity, View } from "react-native";
-import { Game } from "@/providers/jazz/schema";
+import { Game } from "@/schema/games";
 import { Link } from "expo-router";
 
 function GameListItem({
@@ -14,7 +14,7 @@ function GameListItem({
     <View className="flex flex-row">
       <Link
         href={{
-          pathname: '/games/[game]/settings',
+          pathname: "/games/[game]/settings",
           params: { game: game.id },
         }}
       >
@@ -26,7 +26,8 @@ function GameListItem({
             {game.name}
           </Text>
           <Text className="max-w-[700px] text-sm text-gray-500 md:text-xl dark:text-gray-400">
-            {game.start.toLocaleDateString()} - {game.start.toLocaleTimeString()}
+            {game.start.toLocaleDateString()} -{" "}
+            {game.start.toLocaleTimeString()}
           </Text>
         </View>
       </Link>
