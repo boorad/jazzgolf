@@ -94,3 +94,7 @@ I'm wondering here about `Player`s and `Game`s.  A player's list of games on the
 ## Best practice for functions / schema
 
 Should we add helper functions like `createGame()` or `addPlayerToGame()` to the classes in the schema files or keep them separate and have those files be schema-only?  What structures have you used yourself or seen emerge from other Jazz users?
+
+## Is the history of a CoValue available?
+
+Wondering if we need to store the history of a `Score` object.  Some systems have hard-core metadata and it's up to the app to keep track of history that is in "user-land".
